@@ -5,8 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public PlayerBullet bullet;
-    private float force = 10;
-    private Rigidbody2D playerRb;
+    private float force = 20;
+    public Rigidbody2D playerRb;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
         Instantiate(bullet, new Vector3(transform.position.x, transform.position.y + 0.6f), bullet.transform.rotation);
     }
     private void OnCollisionEnter2D(Collision2D other) {
-
+        if(other.gameObject.name == "LimitPlayers")return;
+        Destroy(gameObject);
     }
 }
