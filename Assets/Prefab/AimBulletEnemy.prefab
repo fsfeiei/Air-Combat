@@ -268,7 +268,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 10
   bullet: {fileID: 3501123089699348265, guid: 9ca7ed79f5347044784e180a5f4d50c2, type: 3}
-  player: {fileID: 0}
+  player: {fileID: 99337645565697491, guid: 1df13110b36749e4c9b19fcb3c3ff613, type: 3}
 --- !u!1 &3907414804519275550
 GameObject:
   m_ObjectHideFlags: 0

@@ -13,6 +13,7 @@ public class Enemy : MonoBehaviour
     {
         enemyRb = GetComponent<Rigidbody2D>();
         enemyRb.mass = mass;
+        enemyRb.drag = 0;
         enemyRb.gravityScale = 0;
         gameObject.layer = 7;
         gameObject.tag = "Enemy";
@@ -20,7 +21,7 @@ public class Enemy : MonoBehaviour
     }
 
     // Update is called once per frame
-    public virtual void Update()
+    public virtual void FixedUpdate()
     {
         Move();
     }
