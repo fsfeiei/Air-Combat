@@ -28,9 +28,11 @@ public class Enemy : MonoBehaviour
 
     public virtual void Move()
     {
-        enemyRb.AddRelativeForce(Vector2.up * force);
+        enemyRb.AddRelativeForce(Vector2.up * force * enemyRb.mass);
     }
-    private void OnCollisionEnter2D(Collision2D other) {
+    public virtual void OnCollisionEnter2D(Collision2D other) {
+        // Debug.Log(gameObject.name);
+        if(other.gameObject.tag == "PlayerBullet")hp--;
         if(other.gameObject.name == "DestroyWall")Destroy(gameObject);
         if(hp < 1)Destroy(gameObject);
     }

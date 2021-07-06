@@ -164,12 +164,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.005417019, y: 0.49621838}
-      - {x: -0.1982411, y: -0.09858144}
-      - {x: -0.49602807, y: -0.25976858}
-      - {x: -0.008165598, y: -0.5110818}
-      - {x: 0.5119473, y: -0.25106537}
-      - {x: 0.20350969, y: -0.102675304}
+    - - {x: -0.0008632168, y: 0.37752578}
+      - {x: -0.08759898, y: 0.20491508}
+      - {x: 0.00096565485, y: 0.03181024}
+      - {x: 0.086206764, y: 0.20244373}
 --- !u!114 &52058571
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +181,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 6246450725221858419, guid: b9cb5eb0095befd41861d9bf612ba3c7, type: 3}
+  playerRb: {fileID: 0}
 --- !u!1 &7014987795994638181
 GameObject:
   m_ObjectHideFlags: 0

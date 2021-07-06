@@ -57,7 +57,6 @@ public class AimBulletEnemy : Enemy
                 enemyRb.drag = 0;
             }
         }
-        Debug.Log(enemyRb.drag);
         lastDistance = distance;
     }
     void Attack()
