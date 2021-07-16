@@ -9,10 +9,11 @@ public class FixedTurretEnemy : Enemy
         gameObject.layer = 7;
         gameObject.tag = "Enemy";
         InvokeRepeating("Attack", 0, 1f);
+        base.HpSliderInit();
     }
     public override void Move()
     {
-        
+        base.HpSliderUpdate();
     }
     void Attack()
     {

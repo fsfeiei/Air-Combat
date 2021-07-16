@@ -11,6 +11,7 @@ public class AimTurretEnemy : Enemy
         gameObject.layer = 7;
         gameObject.tag = "Enemy";
         InvokeRepeating("Attack", 0, 1f);
+        base.HpSliderInit();
     }
     public override void Move()
     {
@@ -19,6 +20,7 @@ public class AimTurretEnemy : Enemy
             var angle = Mathf.Atan2((transform.position.y - player.transform.position.y), (transform.position.x - player.transform.position.x)) * Mathf.Rad2Deg + 90;
             transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
         }
+        base.HpSliderUpdate();
     }
     void Attack()
     {

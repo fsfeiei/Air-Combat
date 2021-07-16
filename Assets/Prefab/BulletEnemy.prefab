@@ -50,7 +50,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0b4f443b3956c945a2b8763128f16cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 10
   bullet: {fileID: 3501123089699348265, guid: 9ca7ed79f5347044784e180a5f4d50c2, type: 3}
 --- !u!60 &8108444408136398179
 PolygonCollider2D:
@@ -105,7 +104,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &1867318425010942352
 GameObject:
   m_ObjectHideFlags: 0
