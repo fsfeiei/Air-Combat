@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    protected int hp = 10;
+    protected int hp = 5;
     protected GameObject hpSliderObject;
     protected Slider hpSlider;
     protected Image[] hpSliderImage;
@@ -77,6 +77,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             Destroy(hpSliderObject);
+            EnemySpawnManager.Instance.RemoveFromList(gameObject);
         }
     }
 }

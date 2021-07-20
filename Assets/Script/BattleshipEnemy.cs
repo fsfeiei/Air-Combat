@@ -5,8 +5,8 @@ using UnityEngine;
 public class BattleshipEnemy : Enemy
 {
     public override void Start() {
-        hp = 100;
-        force = 0.01f;
+        hp = 40;
+        force = 0.05f;
         mass = 1000;
         enemyRb = GetComponent<Rigidbody2D>();
         enemyRb.mass = mass;

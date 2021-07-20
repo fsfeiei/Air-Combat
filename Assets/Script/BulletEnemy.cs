@@ -12,6 +12,6 @@ public class BulletEnemy : Enemy
     void Attack()
     {
         var sbullet = Instantiate(bullet, transform.position, transform.rotation);
-        sbullet.force = 3;
+        sbullet.force = 5;
     }
 }

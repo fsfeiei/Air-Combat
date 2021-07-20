@@ -8,9 +8,13 @@ public class AimBulletEnemy : Enemy
     private GameObject player;
     private Rigidbody2D playerRb;
     public override void Start() {
+        hp = 3;
         base.Start();
         player = GameObject.Find("Player");
-        playerRb = player.GetComponent<Rigidbody2D>();
+        if (player != null)
+        {
+            playerRb = player.GetComponent<Rigidbody2D>();
+        }
         InvokeRepeating("Attack", 0, 0.3f);
     }
     float lastDistance = 0;
@@ -62,6 +66,6 @@ public class AimBulletEnemy : Enemy
     void Attack()
     {
         var sbullet = Instantiate(bullet, transform.position, transform.rotation);
-        sbullet.force = 10;
+        sbullet.force = 5;
     }
 }
