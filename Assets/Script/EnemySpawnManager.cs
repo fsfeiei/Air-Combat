@@ -12,7 +12,7 @@ public class EnemySpawnManager : MonoBehaviour
     WaitUntil waitUntilNoEnemy;
     Quaternion spawnRotation;
     float spawnPositionX = 2.5f;
-    float spawnPositionY1 = 6.19f;
+    float spawnPositionY1 = 7f;
     float spawnPositionY2 = 12.28f;
 
     private void Awake() {
